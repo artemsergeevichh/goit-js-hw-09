@@ -7,7 +7,7 @@ const createBtn = document.querySelector('button');
 createBtn.addEventListener('click', event => {
   event.preventDefault();
 
-  
+
   for (let i = 0; i < Number(amountField.value); i += 1) {
     const delays = Number(delayField.value) + stepField.value * i;
     createPromise(i+1, delays)
@@ -35,3 +35,4 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
+
